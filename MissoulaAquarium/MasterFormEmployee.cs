@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace MissoulaAquarium
 {
-    public partial class CustomerLogin : Form
+    public partial class MasterFormEmployee : Form
     {
-        public CustomerLogin()
+        public MasterFormEmployee()
         {
             InitializeComponent();
         }
 
         private void passwordTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }

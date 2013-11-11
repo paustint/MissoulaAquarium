@@ -16,7 +16,7 @@ namespace MissoulaAquarium
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeLogin());
+            Application.Run(new LoginForm());
         }
     }
 }

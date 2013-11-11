@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace MissoulaAquarium
 {
-    public partial class TourSignUp : Form
+    public partial class MasterFormCustomer : Form
     {
-        public TourSignUp()
+        public MasterFormCustomer()
         {
             InitializeComponent();
+        }
+
+        private void lblFeedbackTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

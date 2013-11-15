@@ -38,13 +38,16 @@ namespace MissoulaAquarium
 
             if (correctCredentials)
             {
+                MasterFormEmployee emp = new MasterFormEmployee();
+
                 lblStatus.Text = "";
+                emp.currUser = empNameTxtBox.Text;
                 clearLabels();
                 //TODO: OPEN MasterFormEmployee
                 this.Hide();
-                MasterFormEmployee emp = new MasterFormEmployee();
                 emp.ShowDialog();
                 this.Show();
+
             }
             else
             {
@@ -122,6 +125,11 @@ namespace MissoulaAquarium
 
 
             return correctPassword;
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
 
 

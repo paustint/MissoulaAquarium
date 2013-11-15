@@ -12,6 +12,8 @@ namespace MissoulaAquarium
 {
     public partial class MasterFormEmployee : Form
     {
+        public string currUser = "";
+
         public MasterFormEmployee()
         {
             InitializeComponent();

@@ -187,7 +187,7 @@
             this.label7.TabIndex = 19;
             this.label7.Text = resources.GetString("label7.Text");
             // 
-            // EmployeeLogin
+            // LoginForm
             // 
             this.AcceptButton = this.loginEmp;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,8 +208,9 @@
             this.Controls.Add(this.empNameTxtBox);
             this.Controls.Add(this.loginEmp);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "EmployeeLogin";
+            this.Name = "LoginForm";
             this.Text = "Aquarium Employee Login";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

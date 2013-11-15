@@ -12,11 +12,12 @@ namespace MissoulaAquarium
 {
     public partial class MasterFormEmployee : Form
     {
-        public string currUser = "";
+        private string currUser = "";
 
-        public MasterFormEmployee()
+        public MasterFormEmployee(string currUser)
         {
             InitializeComponent();
+            this.currUser = currUser;
         }
 
         private void passwordTxtBox_TextChanged(object sender, EventArgs e)

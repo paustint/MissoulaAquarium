@@ -38,10 +38,8 @@ namespace MissoulaAquarium
 
             if (correctCredentials)
             {
-                MasterFormEmployee emp = new MasterFormEmployee();
-
+                MasterFormEmployee emp = new MasterFormEmployee(empNameTxtBox.Text);
                 lblStatus.Text = "";
-                emp.currUser = empNameTxtBox.Text;
                 clearLabels();
                 //TODO: OPEN MasterFormEmployee
                 this.Hide();
@@ -69,10 +67,10 @@ namespace MissoulaAquarium
 
             if (correctCredentials)
             {
+                MasterFormCustomer cust = new MasterFormCustomer(custNameTxtBox.Text);
                 clearLabels();
                 //TODO: OPEN MasterFormCust
                 this.Hide();
-                MasterFormCustomer cust = new MasterFormCustomer();
                 cust.ShowDialog();
                 this.Show();
             }

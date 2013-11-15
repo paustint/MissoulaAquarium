@@ -39,7 +39,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tourSignUpNameLbl = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -47,18 +47,18 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.SignUpFOrTours = new System.Windows.Forms.CheckedListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.ToursSignedUpFor = new System.Windows.Forms.ListBox();
+            this.tourRegBtnClear = new System.Windows.Forms.Button();
+            this.tourRegBtnOk = new System.Windows.Forms.Button();
+            this.tourRegTourSignedUpList = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.tourRegLblCustName = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.feedbackLastName = new System.Windows.Forms.TextBox();
+            this.feedbackFirstName = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -80,9 +80,9 @@
             this.label32 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label18 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.cutInfoLblTitle = new System.Windows.Forms.Label();
+            this.textBox3RegToursButton = new System.Windows.Forms.Button();
+            this.textBox3TourSignUpButton = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -92,6 +92,14 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox3EditInfoButton = new System.Windows.Forms.Button();
+            this.cutInfoNameLAbel = new System.Windows.Forms.TextBox();
+            this.cutInfoAdd1 = new System.Windows.Forms.TextBox();
+            this.cutInfoAdd2 = new System.Windows.Forms.TextBox();
+            this.cutInfoCity = new System.Windows.Forms.TextBox();
+            this.cutInfoStateCombo = new System.Windows.Forms.ComboBox();
+            this.cutInfoZip = new System.Windows.Forms.TextBox();
+            this.cutInfoPhone = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -110,9 +118,9 @@
             // 
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
+            this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage5);
             this.tabControl.Controls.Add(this.tabPage4);
-            this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -154,7 +162,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tourSignUpNameLbl);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
@@ -223,13 +231,13 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "Tour Time:";
             // 
-            // textBox1
+            // tourSignUpNameLbl
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(128, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 20);
-            this.textBox1.TabIndex = 36;
+            this.tourSignUpNameLbl.Enabled = false;
+            this.tourSignUpNameLbl.Location = new System.Drawing.Point(128, 31);
+            this.tourSignUpNameLbl.Name = "tourSignUpNameLbl";
+            this.tourSignUpNameLbl.Size = new System.Drawing.Size(267, 20);
+            this.tourSignUpNameLbl.TabIndex = 36;
             // 
             // label3
             // 
@@ -290,11 +298,11 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.ToursSignedUpFor);
+            this.tabPage3.Controls.Add(this.tourRegBtnClear);
+            this.tabPage3.Controls.Add(this.tourRegBtnOk);
+            this.tabPage3.Controls.Add(this.tourRegTourSignedUpList);
             this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.tourRegLblCustName);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1049, 716);
@@ -302,33 +310,33 @@
             this.tabPage3.Text = "Tours Currently Registerd For";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // tourRegBtnClear
             // 
-            this.button1.Location = new System.Drawing.Point(530, 490);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 44);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Cancel Highlighted Tour";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tourRegBtnClear.Location = new System.Drawing.Point(550, 490);
+            this.tourRegBtnClear.Name = "tourRegBtnClear";
+            this.tourRegBtnClear.Size = new System.Drawing.Size(228, 44);
+            this.tourRegBtnClear.TabIndex = 10;
+            this.tourRegBtnClear.Text = "Cancel Highlighted Tour";
+            this.tourRegBtnClear.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // tourRegBtnOk
             // 
-            this.button3.Location = new System.Drawing.Point(271, 490);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(261, 44);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "OK";
-            this.button3.UseVisualStyleBackColor = true;
+            this.tourRegBtnOk.Location = new System.Drawing.Point(271, 490);
+            this.tourRegBtnOk.Name = "tourRegBtnOk";
+            this.tourRegBtnOk.Size = new System.Drawing.Size(228, 44);
+            this.tourRegBtnOk.TabIndex = 9;
+            this.tourRegBtnOk.Text = "OK";
+            this.tourRegBtnOk.UseVisualStyleBackColor = true;
             // 
-            // ToursSignedUpFor
+            // tourRegTourSignedUpList
             // 
-            this.ToursSignedUpFor.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ToursSignedUpFor.FormattingEnabled = true;
-            this.ToursSignedUpFor.ItemHeight = 15;
-            this.ToursSignedUpFor.Location = new System.Drawing.Point(271, 285);
-            this.ToursSignedUpFor.Name = "ToursSignedUpFor";
-            this.ToursSignedUpFor.Size = new System.Drawing.Size(507, 199);
-            this.ToursSignedUpFor.TabIndex = 8;
+            this.tourRegTourSignedUpList.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourRegTourSignedUpList.FormattingEnabled = true;
+            this.tourRegTourSignedUpList.ItemHeight = 15;
+            this.tourRegTourSignedUpList.Location = new System.Drawing.Point(271, 285);
+            this.tourRegTourSignedUpList.Name = "tourRegTourSignedUpList";
+            this.tourRegTourSignedUpList.Size = new System.Drawing.Size(507, 199);
+            this.tourRegTourSignedUpList.TabIndex = 8;
             // 
             // label4
             // 
@@ -340,16 +348,16 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "You are signed up for the following tours";
             // 
-            // label9
+            // tourRegLblCustName
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 36F);
-            this.label9.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label9.Location = new System.Drawing.Point(345, 143);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(341, 59);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Customer Name";
+            this.tourRegLblCustName.AutoSize = true;
+            this.tourRegLblCustName.Font = new System.Drawing.Font("Calibri", 36F);
+            this.tourRegLblCustName.ForeColor = System.Drawing.Color.DarkBlue;
+            this.tourRegLblCustName.Location = new System.Drawing.Point(345, 143);
+            this.tourRegLblCustName.Name = "tourRegLblCustName";
+            this.tourRegLblCustName.Size = new System.Drawing.Size(341, 59);
+            this.tourRegLblCustName.TabIndex = 6;
+            this.tourRegLblCustName.Text = "Customer Name";
             // 
             // tabPage5
             // 
@@ -370,8 +378,8 @@
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.feedbackLastName);
+            this.groupBox2.Controls.Add(this.feedbackFirstName);
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.checkBox1);
@@ -413,19 +421,19 @@
             this.label21.TabIndex = 22;
             this.label21.Text = "First Name";
             // 
-            // textBox4
+            // feedbackLastName
             // 
-            this.textBox4.Location = new System.Drawing.Point(307, 165);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 20);
-            this.textBox4.TabIndex = 5;
+            this.feedbackLastName.Location = new System.Drawing.Point(307, 165);
+            this.feedbackLastName.Name = "feedbackLastName";
+            this.feedbackLastName.Size = new System.Drawing.Size(180, 20);
+            this.feedbackLastName.TabIndex = 5;
             // 
-            // textBox3
+            // feedbackFirstName
             // 
-            this.textBox3.Location = new System.Drawing.Point(307, 133);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 20);
-            this.textBox3.TabIndex = 4;
+            this.feedbackFirstName.Location = new System.Drawing.Point(307, 133);
+            this.feedbackFirstName.Name = "feedbackFirstName";
+            this.feedbackFirstName.Size = new System.Drawing.Size(180, 20);
+            this.feedbackFirstName.TabIndex = 4;
             // 
             // button6
             // 
@@ -639,9 +647,17 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.button4);
-            this.tabPage4.Controls.Add(this.button5);
+            this.tabPage4.Controls.Add(this.cutInfoPhone);
+            this.tabPage4.Controls.Add(this.cutInfoZip);
+            this.tabPage4.Controls.Add(this.cutInfoStateCombo);
+            this.tabPage4.Controls.Add(this.cutInfoCity);
+            this.tabPage4.Controls.Add(this.cutInfoAdd2);
+            this.tabPage4.Controls.Add(this.cutInfoAdd1);
+            this.tabPage4.Controls.Add(this.cutInfoNameLAbel);
+            this.tabPage4.Controls.Add(this.textBox3EditInfoButton);
+            this.tabPage4.Controls.Add(this.cutInfoLblTitle);
+            this.tabPage4.Controls.Add(this.textBox3RegToursButton);
+            this.tabPage4.Controls.Add(this.textBox3TourSignUpButton);
             this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Controls.Add(this.label11);
             this.tabPage4.Controls.Add(this.label12);
@@ -657,53 +673,54 @@
             this.tabPage4.Text = "Customer Information";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label18
+            // cutInfoLblTitle
             // 
-            this.label18.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label18.Location = new System.Drawing.Point(121, 20);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(790, 74);
-            this.label18.TabIndex = 39;
-            this.label18.Text = "Customer Profile";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.cutInfoLblTitle.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cutInfoLblTitle.ForeColor = System.Drawing.Color.DarkBlue;
+            this.cutInfoLblTitle.Location = new System.Drawing.Point(121, 20);
+            this.cutInfoLblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cutInfoLblTitle.Name = "cutInfoLblTitle";
+            this.cutInfoLblTitle.Size = new System.Drawing.Size(790, 74);
+            this.cutInfoLblTitle.TabIndex = 39;
+            this.cutInfoLblTitle.Text = "Profile";
+            this.cutInfoLblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button4
+            // textBox3RegToursButton
             // 
-            this.button4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(531, 475);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(180, 38);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "View Tours You Are Signed Up For";
-            this.button4.UseVisualStyleBackColor = true;
+            this.textBox3RegToursButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3RegToursButton.Location = new System.Drawing.Point(426, 476);
+            this.textBox3RegToursButton.Name = "textBox3RegToursButton";
+            this.textBox3RegToursButton.Size = new System.Drawing.Size(180, 38);
+            this.textBox3RegToursButton.TabIndex = 20;
+            this.textBox3RegToursButton.Text = "View Tours You Are Signed Up For";
+            this.textBox3RegToursButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // textBox3TourSignUpButton
             // 
-            this.button5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(347, 475);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(177, 38);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Sign Up For Tours!";
-            this.button5.UseVisualStyleBackColor = true;
+            this.textBox3TourSignUpButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3TourSignUpButton.Location = new System.Drawing.Point(242, 476);
+            this.textBox3TourSignUpButton.Name = "textBox3TourSignUpButton";
+            this.textBox3TourSignUpButton.Size = new System.Drawing.Size(177, 38);
+            this.textBox3TourSignUpButton.TabIndex = 19;
+            this.textBox3TourSignUpButton.Text = "Sign Up For Tours!";
+            this.textBox3TourSignUpButton.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(343, 411);
+            this.label10.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(317, 411);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(368, 15);
+            this.label10.Size = new System.Drawing.Size(405, 26);
             this.label10.TabIndex = 18;
-            this.label10.Text = "Thank you for visiting the Missoula Aquarium <howOften?> Often!";
+            this.label10.Text = "Thank you for visiting the Missoula Aquarium!";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(340, 359);
+            this.label11.Location = new System.Drawing.Point(260, 355);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(87, 15);
             this.label11.TabIndex = 17;
@@ -713,7 +730,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(528, 313);
+            this.label12.Location = new System.Drawing.Point(568, 321);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(24, 15);
             this.label12.TabIndex = 16;
@@ -723,7 +740,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(434, 313);
+            this.label13.Location = new System.Drawing.Point(455, 321);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(34, 15);
             this.label13.TabIndex = 15;
@@ -733,7 +750,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(340, 313);
+            this.label14.Location = new System.Drawing.Point(319, 321);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(28, 15);
             this.label14.TabIndex = 14;
@@ -743,7 +760,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(337, 280);
+            this.label15.Location = new System.Drawing.Point(289, 287);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(58, 15);
             this.label15.TabIndex = 13;
@@ -753,7 +770,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(337, 241);
+            this.label16.Location = new System.Drawing.Point(289, 253);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(58, 15);
             this.label16.TabIndex = 12;
@@ -763,7 +780,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(337, 203);
+            this.label17.Location = new System.Drawing.Point(238, 211);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(109, 23);
             this.label17.TabIndex = 11;
@@ -776,8 +793,77 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1049, 716);
             this.tabPage1.TabIndex = 5;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Events";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // textBox3EditInfoButton
+            // 
+            this.textBox3EditInfoButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3EditInfoButton.Location = new System.Drawing.Point(612, 476);
+            this.textBox3EditInfoButton.Name = "textBox3EditInfoButton";
+            this.textBox3EditInfoButton.Size = new System.Drawing.Size(180, 38);
+            this.textBox3EditInfoButton.TabIndex = 42;
+            this.textBox3EditInfoButton.Text = "Edit Personal Information";
+            this.textBox3EditInfoButton.UseVisualStyleBackColor = true;
+            // 
+            // cutInfoNameLAbel
+            // 
+            this.cutInfoNameLAbel.Enabled = false;
+            this.cutInfoNameLAbel.Location = new System.Drawing.Point(353, 215);
+            this.cutInfoNameLAbel.Name = "cutInfoNameLAbel";
+            this.cutInfoNameLAbel.Size = new System.Drawing.Size(239, 20);
+            this.cutInfoNameLAbel.TabIndex = 43;
+            this.cutInfoNameLAbel.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // cutInfoAdd1
+            // 
+            this.cutInfoAdd1.Enabled = false;
+            this.cutInfoAdd1.Location = new System.Drawing.Point(353, 253);
+            this.cutInfoAdd1.Name = "cutInfoAdd1";
+            this.cutInfoAdd1.Size = new System.Drawing.Size(239, 20);
+            this.cutInfoAdd1.TabIndex = 44;
+            this.cutInfoAdd1.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // cutInfoAdd2
+            // 
+            this.cutInfoAdd2.Enabled = false;
+            this.cutInfoAdd2.Location = new System.Drawing.Point(353, 288);
+            this.cutInfoAdd2.Name = "cutInfoAdd2";
+            this.cutInfoAdd2.Size = new System.Drawing.Size(239, 20);
+            this.cutInfoAdd2.TabIndex = 45;
+            // 
+            // cutInfoCity
+            // 
+            this.cutInfoCity.Enabled = false;
+            this.cutInfoCity.Location = new System.Drawing.Point(353, 321);
+            this.cutInfoCity.Name = "cutInfoCity";
+            this.cutInfoCity.Size = new System.Drawing.Size(96, 20);
+            this.cutInfoCity.TabIndex = 46;
+            // 
+            // cutInfoStateCombo
+            // 
+            this.cutInfoStateCombo.Enabled = false;
+            this.cutInfoStateCombo.FormattingEnabled = true;
+            this.cutInfoStateCombo.Location = new System.Drawing.Point(491, 319);
+            this.cutInfoStateCombo.Name = "cutInfoStateCombo";
+            this.cutInfoStateCombo.Size = new System.Drawing.Size(71, 21);
+            this.cutInfoStateCombo.TabIndex = 47;
+            // 
+            // cutInfoZip
+            // 
+            this.cutInfoZip.Enabled = false;
+            this.cutInfoZip.Location = new System.Drawing.Point(598, 321);
+            this.cutInfoZip.Name = "cutInfoZip";
+            this.cutInfoZip.Size = new System.Drawing.Size(96, 20);
+            this.cutInfoZip.TabIndex = 48;
+            // 
+            // cutInfoPhone
+            // 
+            this.cutInfoPhone.Enabled = false;
+            this.cutInfoPhone.Location = new System.Drawing.Point(353, 355);
+            this.cutInfoPhone.Name = "cutInfoPhone";
+            this.cutInfoPhone.Size = new System.Drawing.Size(96, 20);
+            this.cutInfoPhone.TabIndex = 49;
             // 
             // MasterFormCustomer
             // 
@@ -787,6 +873,7 @@
             this.Controls.Add(this.tabControl);
             this.Name = "MasterFormCustomer";
             this.Text = "Customer Portal: Missoula Aquarium";
+            this.Load += new System.EventHandler(this.MasterFormCustomer_Load);
             this.tabControl.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -822,7 +909,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tourSignUpNameLbl;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
@@ -830,14 +917,14 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.CheckedListBox SignUpFOrTours;
         private System.Windows.Forms.Label lblFeedbackTitle;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ListBox ToursSignedUpFor;
+        private System.Windows.Forms.Button tourRegBtnClear;
+        private System.Windows.Forms.Button tourRegBtnOk;
+        private System.Windows.Forms.ListBox tourRegTourSignedUpList;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label tourRegLblCustName;
+        private System.Windows.Forms.Label cutInfoLblTitle;
+        private System.Windows.Forms.Button textBox3RegToursButton;
+        private System.Windows.Forms.Button textBox3TourSignUpButton;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -850,8 +937,8 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox feedbackLastName;
+        private System.Windows.Forms.TextBox feedbackFirstName;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -873,5 +960,13 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TextBox cutInfoAdd2;
+        private System.Windows.Forms.TextBox cutInfoAdd1;
+        private System.Windows.Forms.TextBox cutInfoNameLAbel;
+        private System.Windows.Forms.Button textBox3EditInfoButton;
+        private System.Windows.Forms.TextBox cutInfoPhone;
+        private System.Windows.Forms.TextBox cutInfoZip;
+        private System.Windows.Forms.ComboBox cutInfoStateCombo;
+        private System.Windows.Forms.TextBox cutInfoCity;
     }
 }

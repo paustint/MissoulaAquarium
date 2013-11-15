@@ -26,5 +26,10 @@ namespace MissoulaAquarium
         {
 
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

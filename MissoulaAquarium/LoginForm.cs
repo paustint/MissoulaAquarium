@@ -21,10 +21,10 @@ namespace MissoulaAquarium
         public LoginForm()
         {
             InitializeComponent();
-            userNamesEmp.Add("John", "j1234");
-            userNamesEmp.Add("Sally", "s1234");
-            userNamesEmp.Add("Bob", "b1234");
-            userNamesEmp.Add("Harry", "h1234");
+            userNamesEmp.Add("79002", "j1234");
+            userNamesEmp.Add("79003", "s1234");
+            userNamesEmp.Add("79004", "b1234");
+            userNamesEmp.Add("79005", "h1234");
             userNamesCust.Add("Bruno Mars", "b1234");
             userNamesCust.Add("Josh Price", "j1234");
             userNamesCust.Add("Marshall Hanson", "m1234");

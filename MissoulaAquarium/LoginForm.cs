@@ -38,7 +38,7 @@ namespace MissoulaAquarium
 
             if (correctCredentials)
             {
-                MasterFormEmployee emp = new MasterFormEmployee(empNameTxtBox.Text);
+                MasterFormEmployee emp = new MasterFormEmployee(empNameTxtBox.Text );
                 lblStatus.Text = "";
                 clearLabels();
                 //TODO: OPEN MasterFormEmployee

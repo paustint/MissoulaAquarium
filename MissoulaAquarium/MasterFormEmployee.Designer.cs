@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             "",
@@ -38,17 +38,7 @@
             "",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem(new string[] {
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             "",
@@ -81,7 +71,7 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.button4 = new System.Windows.Forms.Button();
             this.monthCalendar3 = new System.Windows.Forms.MonthCalendar();
-            this.listView3 = new System.Windows.Forms.ListView();
+            this.scheduleListBox = new System.Windows.Forms.ListView();
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -233,7 +223,7 @@
             this.tabPage3.Controls.Add(this.tabControl1);
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Controls.Add(this.monthCalendar3);
-            this.tabPage3.Controls.Add(this.listView3);
+            this.tabPage3.Controls.Add(this.scheduleListBox);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -379,9 +369,9 @@
             this.monthCalendar3.Name = "monthCalendar3";
             this.monthCalendar3.TabIndex = 39;
             // 
-            // listView3
+            // scheduleListBox
             // 
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.scheduleListBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader17,
             this.columnHeader18,
             this.columnHeader19,
@@ -391,15 +381,14 @@
             this.columnHeader23,
             this.columnHeader24,
             this.columnHeader25});
-            this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem13});
-            this.listView3.Location = new System.Drawing.Point(18, 195);
-            this.listView3.Margin = new System.Windows.Forms.Padding(4);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(1012, 276);
-            this.listView3.TabIndex = 40;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
+            this.scheduleListBox.HoverSelection = true;
+            this.scheduleListBox.Location = new System.Drawing.Point(18, 195);
+            this.scheduleListBox.Margin = new System.Windows.Forms.Padding(4);
+            this.scheduleListBox.Name = "scheduleListBox";
+            this.scheduleListBox.Size = new System.Drawing.Size(1012, 276);
+            this.scheduleListBox.TabIndex = 40;
+            this.scheduleListBox.UseCompatibleStateImageBehavior = false;
+            this.scheduleListBox.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader17
             // 
@@ -697,7 +686,7 @@
             this.columnHeader15,
             this.columnHeader16});
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem14});
+            listViewItem5});
             this.listView2.Location = new System.Drawing.Point(7, 27);
             this.listView2.Margin = new System.Windows.Forms.Padding(4);
             this.listView2.Name = "listView2";
@@ -772,7 +761,7 @@
             this.columnHeader8,
             this.columnHeader9});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem15});
+            listViewItem6});
             this.listView1.Location = new System.Drawing.Point(18, 194);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
@@ -1025,7 +1014,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.MonthCalendar monthCalendar3;
-        private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.ColumnHeader columnHeader19;
@@ -1052,5 +1040,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label eventsAvaillbl;
         private System.Windows.Forms.ListBox eventsAvailListBox;
+        public System.Windows.Forms.ListView scheduleListBox;
     }
 }

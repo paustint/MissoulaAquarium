@@ -69,8 +69,7 @@ namespace MissoulaAquarium
         }
 
         private void addToListBoxAvailEvents()
-        {
-
+        {   //add available events to listbox
             eventsAvailListBox.DataSource = eventsAvail;
             eventsAvailListBox.SelectedIndex = 0;
         }
@@ -101,6 +100,7 @@ namespace MissoulaAquarium
             int index = eventsAvailListBox.SelectedIndex;
             Event temp = eventsAvail.ElementAt(index);
             Boolean isSigned = false;
+            //make sure user is not already signed up for event
             foreach (Event ev in eventsSigned)
             {
                 if (ev.eventID == temp.eventID)

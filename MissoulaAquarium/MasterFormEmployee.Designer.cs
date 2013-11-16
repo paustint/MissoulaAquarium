@@ -350,10 +350,10 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(293, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 13);
+            this.label1.Size = new System.Drawing.Size(435, 13);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Number    Tour Name              Date                       Time            Locat" +
-    "ion";
+            this.label1.Text = "Number    Tour Name              Guide                      Date                 " +
+    "                         Location";
             // 
             // cancelTourBtn
             // 

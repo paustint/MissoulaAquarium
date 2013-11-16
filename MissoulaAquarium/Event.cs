@@ -13,7 +13,7 @@ namespace MissoulaAquarium
         private string eventTime = "";
         private string eventLocation = "";
         private string attendee = "";
-        private int eventID = 0;
+        public int eventID {get;set;}
 
         public Event(string name, string d, string time, string location, int i)
         {

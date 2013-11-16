@@ -100,8 +100,20 @@ namespace MissoulaAquarium
             //add selected item to signed up box
             int index = eventsAvailListBox.SelectedIndex;
             Event temp = eventsAvail.ElementAt(index);
-            eventsSigned.Add(temp);
-            addToListBoxSignedEvents();
+            Boolean isSigned = false;
+            foreach (Event ev in eventsSigned)
+            {
+                if (ev.eventID == temp.eventID)
+                {
+                    isSigned = true;
+                    MessageBox.Show("You are already signed up for this event.");
+                }
+            }
+            if (!isSigned)
+            {
+                eventsSigned.Add(temp);
+                addToListBoxSignedEvents(); 
+            }
         }
 
         private void addToListBoxSignedEvents()

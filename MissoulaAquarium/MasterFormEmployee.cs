@@ -17,14 +17,13 @@ namespace MissoulaAquarium
         private List<Event> eventsAvail = new List<Event>();
         private List<Event> eventsSigned = new List<Event>();
         private List<Employee> employees = new List<Employee>();
-        private List<Shift> employeeShift = new List<Shift>();
-
+        
         public MasterFormEmployee(string currUser)
         {
             InitializeComponent();
             this.currUser = currUser;
 
-            //populte events with hard coded values
+            //populate events with hard coded values
             eventsAvail.Add(new Event("Whale Watch", "12/12/2013", "3:00 pm", "Missoula Aquarium", 1));
             eventsAvail.Add(new Event("Open Discussion", "12/15/2013", "6:00 pm", "University of Montana", 2));
             eventsAvail.Add(new Event("Seal Play-time", "12/17/2013", "1:00 pm", "Missoula Aquarium", 3));
@@ -43,15 +42,15 @@ namespace MissoulaAquarium
             Employee current4 = new Employee("Todd Regal", userNum + 3, "Gift Shop Clerk");
             employees.Add(current4);
  
-
+            //print to console for reference and debug
             foreach (Employee e in employees)
             {
                 Console.WriteLine(e);
             }
 
-            Shift currentEmpSch = new Shift(current, "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off");
+            //add employees to schedule in sloppy manner ;)
 
-            employeeShift.Add(currentEmpSch);
+            Shift currentEmpSch = new Shift(current, "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off");
             ListViewItem item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
             scheduleListBox.Items.Add(item);
 
@@ -59,7 +58,7 @@ namespace MissoulaAquarium
             item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
             scheduleListBox.Items.Add(item);
 
-            currentEmpSch = new Shift(current3,   "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off", "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm" );
+            currentEmpSch = new Shift(current3, "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off");
             item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
             scheduleListBox.Items.Add(item);
 

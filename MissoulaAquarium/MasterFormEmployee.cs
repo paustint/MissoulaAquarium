@@ -33,15 +33,16 @@ namespace MissoulaAquarium
 
             //populte employees with hard coded values
             int userNum = int.Parse(currUser);
+            int diff = 0;// userNum - 79002;
             Employee current = new Employee("John Lee", userNum, "Associate");
             employees.Add(current);
-            Employee current2 = new Employee("Mary Jane", userNum + 1, "Associate");
+            Employee current2 = new Employee("Mary Jane", userNum - diff + 1, "Associate");
             employees.Add(current2);
-            Employee current3 = new Employee("Fred Savage", userNum + 2, "Manager");
+            Employee current3 = new Employee("Fred Savage", userNum - diff + 2, "Manager");
             employees.Add(current3);
-            Employee current4 = new Employee("Todd Regal", userNum + 3, "Gift Shop Clerk");
+            Employee current4 = new Employee("Todd Regal", userNum - diff + 3, "Gift Shop Clerk");
             employees.Add(current4);
-
+            
             //print to console for reference and debug
             foreach (Employee e in employees)
             {

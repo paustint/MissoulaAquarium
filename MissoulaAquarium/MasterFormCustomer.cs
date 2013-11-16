@@ -19,6 +19,8 @@ namespace MissoulaAquarium
             this.custName = custName;
             tourRegLblCustName.Text = custName;
             fillForms();
+
+            //Populate events
         }
 
         private void lblFeedbackTitle_Click(object sender, EventArgs e)

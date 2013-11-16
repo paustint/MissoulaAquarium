@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             "",
@@ -38,7 +38,7 @@
             "",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             "",
@@ -48,7 +48,7 @@
             "",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             "",
@@ -138,6 +138,12 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.eventsAvailListBox = new System.Windows.Forms.ListBox();
+            this.eventsAvaillbl = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.eventsSignedListBox = new System.Windows.Forms.ListBox();
+            this.signupBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
             this.tabLogin.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -147,6 +153,7 @@
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabLogin
@@ -385,7 +392,7 @@
             this.columnHeader24,
             this.columnHeader25});
             this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem13});
             this.listView3.Location = new System.Drawing.Point(18, 195);
             this.listView3.Margin = new System.Windows.Forms.Padding(4);
             this.listView3.Name = "listView3";
@@ -690,7 +697,7 @@
             this.columnHeader15,
             this.columnHeader16});
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem14});
             this.listView2.Location = new System.Drawing.Point(7, 27);
             this.listView2.Margin = new System.Windows.Forms.Padding(4);
             this.listView2.Name = "listView2";
@@ -765,7 +772,7 @@
             this.columnHeader8,
             this.columnHeader9});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem15});
             this.listView1.Location = new System.Drawing.Point(18, 194);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
@@ -863,13 +870,74 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.cancelBtn);
+            this.tabPage7.Controls.Add(this.signupBtn);
+            this.tabPage7.Controls.Add(this.eventsSignedListBox);
+            this.tabPage7.Controls.Add(this.label18);
+            this.tabPage7.Controls.Add(this.eventsAvaillbl);
+            this.tabPage7.Controls.Add(this.eventsAvailListBox);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(1049, 716);
             this.tabPage7.TabIndex = 5;
-            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.Text = "View/Sign-up Events";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // eventsAvailListBox
+            // 
+            this.eventsAvailListBox.FormattingEnabled = true;
+            this.eventsAvailListBox.Location = new System.Drawing.Point(183, 62);
+            this.eventsAvailListBox.Name = "eventsAvailListBox";
+            this.eventsAvailListBox.Size = new System.Drawing.Size(511, 147);
+            this.eventsAvailListBox.TabIndex = 0;
+            this.eventsAvailListBox.SelectedIndexChanged += new System.EventHandler(this.eventsAvailListBox_SelectedIndexChanged);
+            // 
+            // eventsAvaillbl
+            // 
+            this.eventsAvaillbl.AutoSize = true;
+            this.eventsAvaillbl.Location = new System.Drawing.Point(283, 16);
+            this.eventsAvaillbl.Name = "eventsAvaillbl";
+            this.eventsAvaillbl.Size = new System.Drawing.Size(86, 13);
+            this.eventsAvaillbl.TabIndex = 1;
+            this.eventsAvaillbl.Text = "Available Events";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(283, 316);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(106, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Events Signed up for";
+            // 
+            // eventsSignedListBox
+            // 
+            this.eventsSignedListBox.FormattingEnabled = true;
+            this.eventsSignedListBox.Location = new System.Drawing.Point(183, 348);
+            this.eventsSignedListBox.Name = "eventsSignedListBox";
+            this.eventsSignedListBox.Size = new System.Drawing.Size(511, 147);
+            this.eventsSignedListBox.TabIndex = 3;
+            // 
+            // signupBtn
+            // 
+            this.signupBtn.Location = new System.Drawing.Point(283, 231);
+            this.signupBtn.Name = "signupBtn";
+            this.signupBtn.Size = new System.Drawing.Size(325, 30);
+            this.signupBtn.TabIndex = 4;
+            this.signupBtn.Text = "Sign Up For Event";
+            this.signupBtn.UseVisualStyleBackColor = true;
+            this.signupBtn.Click += new System.EventHandler(this.signupBtn_Click);
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.Location = new System.Drawing.Point(283, 543);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(326, 30);
+            this.cancelBtn.TabIndex = 5;
+            this.cancelBtn.Text = "Cancel Event";
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // MasterFormEmployee
             // 
@@ -890,6 +958,8 @@
             this.tabPage5.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -976,5 +1046,11 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button signupBtn;
+        private System.Windows.Forms.ListBox eventsSignedListBox;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label eventsAvaillbl;
+        private System.Windows.Forms.ListBox eventsAvailListBox;
     }
 }

@@ -83,6 +83,7 @@
             this.empPasswordTxtBox.Name = "empPasswordTxtBox";
             this.empPasswordTxtBox.Size = new System.Drawing.Size(221, 21);
             this.empPasswordTxtBox.TabIndex = 8;
+            this.empPasswordTxtBox.Text = "j1234";
             // 
             // empNameTxtBox
             // 
@@ -91,6 +92,7 @@
             this.empNameTxtBox.Name = "empNameTxtBox";
             this.empNameTxtBox.Size = new System.Drawing.Size(221, 21);
             this.empNameTxtBox.TabIndex = 7;
+            this.empNameTxtBox.Text = "79002";
             // 
             // loginEmp
             // 

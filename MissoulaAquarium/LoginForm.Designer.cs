@@ -84,6 +84,7 @@
             this.empPasswordTxtBox.Size = new System.Drawing.Size(221, 21);
             this.empPasswordTxtBox.TabIndex = 8;
             this.empPasswordTxtBox.Text = "j1234";
+            this.empPasswordTxtBox.UseSystemPasswordChar = true;
             // 
             // empNameTxtBox
             // 
@@ -160,6 +161,7 @@
             this.custPasswordTxtBox.Name = "custPasswordTxtBox";
             this.custPasswordTxtBox.Size = new System.Drawing.Size(221, 21);
             this.custPasswordTxtBox.TabIndex = 15;
+            this.custPasswordTxtBox.UseSystemPasswordChar = true;
             // 
             // custNameTxtBox
             // 
@@ -211,6 +213,7 @@
             this.Controls.Add(this.loginEmp);
             this.Controls.Add(this.pictureBox1);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aquarium Employee Login";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

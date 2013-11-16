@@ -70,13 +70,15 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.lblFeedbackTitle = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.signupBtn = new System.Windows.Forms.Button();
             this.eventsSignedListBox = new System.Windows.Forms.ListBox();
             this.label18 = new System.Windows.Forms.Label();
             this.eventsAvaillbl = new System.Windows.Forms.Label();
             this.eventsAvailListBox = new System.Windows.Forms.ListBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabLogin.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -84,6 +86,7 @@
             this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabLogin
@@ -472,6 +475,8 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.label10);
+            this.tabPage7.Controls.Add(this.pictureBox1);
             this.tabPage7.Controls.Add(this.label9);
             this.tabPage7.Controls.Add(this.cancelBtn);
             this.tabPage7.Controls.Add(this.signupBtn);
@@ -487,10 +492,29 @@
             this.tabPage7.Text = "View/Sign-up Events";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MissoulaAquarium.Properties.Resources.banner;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(305, 704);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(513, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(312, 45);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Event Management";
+            // 
             // cancelBtn
             // 
             this.cancelBtn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelBtn.Location = new System.Drawing.Point(350, 606);
+            this.cancelBtn.Location = new System.Drawing.Point(508, 577);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(326, 30);
             this.cancelBtn.TabIndex = 5;
@@ -501,7 +525,7 @@
             // signupBtn
             // 
             this.signupBtn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupBtn.Location = new System.Drawing.Point(350, 321);
+            this.signupBtn.Location = new System.Drawing.Point(508, 292);
             this.signupBtn.Name = "signupBtn";
             this.signupBtn.Size = new System.Drawing.Size(326, 30);
             this.signupBtn.TabIndex = 4;
@@ -514,7 +538,7 @@
             this.eventsSignedListBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eventsSignedListBox.FormattingEnabled = true;
             this.eventsSignedListBox.ItemHeight = 14;
-            this.eventsSignedListBox.Location = new System.Drawing.Point(250, 440);
+            this.eventsSignedListBox.Location = new System.Drawing.Point(408, 411);
             this.eventsSignedListBox.Name = "eventsSignedListBox";
             this.eventsSignedListBox.Size = new System.Drawing.Size(511, 144);
             this.eventsSignedListBox.TabIndex = 3;
@@ -523,7 +547,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(420, 399);
+            this.label18.Location = new System.Drawing.Point(578, 370);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(185, 26);
             this.label18.TabIndex = 2;
@@ -533,7 +557,7 @@
             // 
             this.eventsAvaillbl.AutoSize = true;
             this.eventsAvaillbl.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eventsAvaillbl.Location = new System.Drawing.Point(420, 113);
+            this.eventsAvaillbl.Location = new System.Drawing.Point(578, 59);
             this.eventsAvaillbl.Name = "eventsAvaillbl";
             this.eventsAvaillbl.Size = new System.Drawing.Size(149, 26);
             this.eventsAvaillbl.TabIndex = 1;
@@ -544,21 +568,21 @@
             this.eventsAvailListBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eventsAvailListBox.FormattingEnabled = true;
             this.eventsAvailListBox.ItemHeight = 14;
-            this.eventsAvailListBox.Location = new System.Drawing.Point(250, 154);
+            this.eventsAvailListBox.Location = new System.Drawing.Point(408, 125);
             this.eventsAvailListBox.Name = "eventsAvailListBox";
             this.eventsAvailListBox.Size = new System.Drawing.Size(511, 144);
             this.eventsAvailListBox.TabIndex = 0;
             this.eventsAvailListBox.SelectedIndexChanged += new System.EventHandler(this.eventsAvailListBox_SelectedIndexChanged);
             // 
-            // label9
+            // label10
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(355, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(312, 45);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Event Management";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(408, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(349, 13);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Number    Event Name              Date                       Time            Loca" +
+    "tion";
             // 
             // MasterFormEmployee
             // 
@@ -577,6 +601,7 @@
             this.groupBox1.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -632,5 +657,7 @@
         private System.Windows.Forms.ListBox eventsAvailListBox;
         public System.Windows.Forms.ListView scheduleListBox;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label10;
     }
 }

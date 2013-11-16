@@ -76,6 +76,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.eventsAvaillbl = new System.Windows.Forms.Label();
             this.eventsAvailListBox = new System.Windows.Forms.ListBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabLogin.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -210,6 +211,7 @@
             this.columnHeader23,
             this.columnHeader24,
             this.columnHeader25});
+            this.scheduleListBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scheduleListBox.HoverSelection = true;
             this.scheduleListBox.Location = new System.Drawing.Point(4, 195);
             this.scheduleListBox.Margin = new System.Windows.Forms.Padding(4);
@@ -470,6 +472,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.label9);
             this.tabPage7.Controls.Add(this.cancelBtn);
             this.tabPage7.Controls.Add(this.signupBtn);
             this.tabPage7.Controls.Add(this.eventsSignedListBox);
@@ -486,7 +489,8 @@
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(283, 543);
+            this.cancelBtn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelBtn.Location = new System.Drawing.Point(350, 606);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(326, 30);
             this.cancelBtn.TabIndex = 5;
@@ -496,9 +500,10 @@
             // 
             // signupBtn
             // 
-            this.signupBtn.Location = new System.Drawing.Point(283, 231);
+            this.signupBtn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupBtn.Location = new System.Drawing.Point(350, 321);
             this.signupBtn.Name = "signupBtn";
-            this.signupBtn.Size = new System.Drawing.Size(325, 30);
+            this.signupBtn.Size = new System.Drawing.Size(326, 30);
             this.signupBtn.TabIndex = 4;
             this.signupBtn.Text = "Sign Up For Event";
             this.signupBtn.UseVisualStyleBackColor = true;
@@ -506,38 +511,54 @@
             // 
             // eventsSignedListBox
             // 
+            this.eventsSignedListBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eventsSignedListBox.FormattingEnabled = true;
-            this.eventsSignedListBox.Location = new System.Drawing.Point(183, 348);
+            this.eventsSignedListBox.ItemHeight = 14;
+            this.eventsSignedListBox.Location = new System.Drawing.Point(250, 440);
             this.eventsSignedListBox.Name = "eventsSignedListBox";
-            this.eventsSignedListBox.Size = new System.Drawing.Size(511, 147);
+            this.eventsSignedListBox.Size = new System.Drawing.Size(511, 144);
             this.eventsSignedListBox.TabIndex = 3;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(283, 316);
+            this.label18.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(420, 399);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 13);
+            this.label18.Size = new System.Drawing.Size(185, 26);
             this.label18.TabIndex = 2;
             this.label18.Text = "Events Signed up for";
             // 
             // eventsAvaillbl
             // 
             this.eventsAvaillbl.AutoSize = true;
-            this.eventsAvaillbl.Location = new System.Drawing.Point(283, 16);
+            this.eventsAvaillbl.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eventsAvaillbl.Location = new System.Drawing.Point(420, 113);
             this.eventsAvaillbl.Name = "eventsAvaillbl";
-            this.eventsAvaillbl.Size = new System.Drawing.Size(86, 13);
+            this.eventsAvaillbl.Size = new System.Drawing.Size(149, 26);
             this.eventsAvaillbl.TabIndex = 1;
             this.eventsAvaillbl.Text = "Available Events";
             // 
             // eventsAvailListBox
             // 
+            this.eventsAvailListBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eventsAvailListBox.FormattingEnabled = true;
-            this.eventsAvailListBox.Location = new System.Drawing.Point(183, 62);
+            this.eventsAvailListBox.ItemHeight = 14;
+            this.eventsAvailListBox.Location = new System.Drawing.Point(250, 154);
             this.eventsAvailListBox.Name = "eventsAvailListBox";
-            this.eventsAvailListBox.Size = new System.Drawing.Size(511, 147);
+            this.eventsAvailListBox.Size = new System.Drawing.Size(511, 144);
             this.eventsAvailListBox.TabIndex = 0;
             this.eventsAvailListBox.SelectedIndexChanged += new System.EventHandler(this.eventsAvailListBox_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(355, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(312, 45);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Event Management";
             // 
             // MasterFormEmployee
             // 
@@ -610,5 +631,6 @@
         private System.Windows.Forms.Label eventsAvaillbl;
         private System.Windows.Forms.ListBox eventsAvailListBox;
         public System.Windows.Forms.ListView scheduleListBox;
+        private System.Windows.Forms.Label label9;
     }
 }

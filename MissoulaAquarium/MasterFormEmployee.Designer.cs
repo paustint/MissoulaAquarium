@@ -30,11 +30,6 @@
         {
             this.tabLogin = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listView4 = new System.Windows.Forms.ListView();
-            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -51,25 +46,8 @@
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label16 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.lblFeedbackTitle = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cancelBtn = new System.Windows.Forms.Button();
@@ -78,13 +56,17 @@
             this.label18 = new System.Windows.Forms.Label();
             this.eventsAvaillbl = new System.Windows.Forms.Label();
             this.eventsAvailListBox = new System.Windows.Forms.ListBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cancelTourBtn = new System.Windows.Forms.Button();
+            this.signTourBtn = new System.Windows.Forms.Button();
+            this.toursSignedListBox = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.availToursListBox = new System.Windows.Forms.ListBox();
             this.tabLogin.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +75,6 @@
             // 
             this.tabLogin.Controls.Add(this.tabPage2);
             this.tabLogin.Controls.Add(this.tabPage3);
-            this.tabLogin.Controls.Add(this.tabPage4);
             this.tabLogin.Controls.Add(this.tabPage7);
             this.tabLogin.Location = new System.Drawing.Point(1, 0);
             this.tabLogin.Name = "tabLogin";
@@ -103,7 +84,13 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.listView4);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.cancelTourBtn);
+            this.tabPage2.Controls.Add(this.signTourBtn);
+            this.tabPage2.Controls.Add(this.toursSignedListBox);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.availToursListBox);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -113,40 +100,6 @@
             this.tabPage2.Text = "Tours Schedule";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
-            // listView4
-            // 
-            this.listView4.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader26,
-            this.columnHeader27,
-            this.columnHeader28,
-            this.columnHeader29});
-            this.listView4.Location = new System.Drawing.Point(0, 78);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(1048, 635);
-            this.listView4.TabIndex = 41;
-            this.listView4.UseCompatibleStateImageBehavior = false;
-            this.listView4.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader26
-            // 
-            this.columnHeader26.Text = "Tour Type";
-            this.columnHeader26.Width = 223;
-            // 
-            // columnHeader27
-            // 
-            this.columnHeader27.Text = "Tour depart";
-            this.columnHeader27.Width = 195;
-            // 
-            // columnHeader28
-            // 
-            this.columnHeader28.Text = "# Attendees";
-            this.columnHeader28.Width = 223;
-            // 
-            // columnHeader29
-            // 
-            this.columnHeader29.Text = "Tour Guide";
-            this.columnHeader29.Width = 197;
             // 
             // label17
             // 
@@ -281,198 +234,6 @@
             this.label16.Text = "Employee Schedule";
             this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.listBox1);
-            this.tabPage4.Controls.Add(this.groupBox1);
-            this.tabPage4.Controls.Add(this.monthCalendar1);
-            this.tabPage4.Controls.Add(this.lblFeedbackTitle);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1049, 716);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Tour Sign-Up";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "LIST OF TOURS:",
-            "BLAH BLAH tour1",
-            "OTHER tour2",
-            "Tour myTour = new Tour(\"This is another new tour\");",
-            "myTour.clone();",
-            "myTour.generateMassRevenue(true);"});
-            this.listBox1.Location = new System.Drawing.Point(21, 204);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(982, 264);
-            this.listBox1.TabIndex = 42;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(210, 496);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(793, 205);
-            this.groupBox1.TabIndex = 41;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tour Sign-Up";
-            // 
-            // label7
-            // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(516, 25);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(251, 24);
-            this.label7.TabIndex = 42;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Enabled = false;
-            this.label8.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(409, 23);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 26);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "Tour Guide";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(128, 115);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(77, 21);
-            this.comboBox2.TabIndex = 40;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 118);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 13);
-            this.label6.TabIndex = 39;
-            this.label6.Text = "# of Atendees";
-            // 
-            // label5
-            // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(516, 112);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 24);
-            this.label5.TabIndex = 38;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Enabled = false;
-            this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(410, 110);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 26);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "Tour Time:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(128, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 20);
-            this.textBox1.TabIndex = 36;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(130, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(265, 21);
-            this.comboBox1.TabIndex = 35;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "Employee ID";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Employee Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(411, 71);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 26);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Tour Date:";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(516, 70);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(250, 20);
-            this.dateTimePicker2.TabIndex = 30;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(516, 150);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Sign-up attendees";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 1);
-            this.monthCalendar1.Location = new System.Drawing.Point(21, 32);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 13, 12, 13);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 40;
-            // 
-            // lblFeedbackTitle
-            // 
-            this.lblFeedbackTitle.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFeedbackTitle.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblFeedbackTitle.Location = new System.Drawing.Point(495, 15);
-            this.lblFeedbackTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFeedbackTitle.Name = "lblFeedbackTitle";
-            this.lblFeedbackTitle.Size = new System.Drawing.Size(533, 74);
-            this.lblFeedbackTitle.TabIndex = 39;
-            this.lblFeedbackTitle.Text = "Tour Sign-Up";
-            this.lblFeedbackTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.label10);
@@ -491,6 +252,16 @@
             this.tabPage7.TabIndex = 5;
             this.tabPage7.Text = "View/Sign-up Events";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(408, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(349, 13);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Number    Event Name              Date                       Time            Loca" +
+    "tion";
             // 
             // pictureBox1
             // 
@@ -574,15 +345,77 @@
             this.eventsAvailListBox.TabIndex = 0;
             this.eventsAvailListBox.SelectedIndexChanged += new System.EventHandler(this.eventsAvailListBox_SelectedIndexChanged);
             // 
-            // label10
+            // label1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(408, 106);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(349, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Number    Event Name              Date                       Time            Loca" +
-    "tion";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(293, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(343, 13);
+            this.label1.TabIndex = 47;
+            this.label1.Text = "Number    Tour Name              Date                       Time            Locat" +
+    "ion";
+            // 
+            // cancelTourBtn
+            // 
+            this.cancelTourBtn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelTourBtn.Location = new System.Drawing.Point(393, 595);
+            this.cancelTourBtn.Name = "cancelTourBtn";
+            this.cancelTourBtn.Size = new System.Drawing.Size(326, 30);
+            this.cancelTourBtn.TabIndex = 46;
+            this.cancelTourBtn.Text = "Cancel Tour";
+            this.cancelTourBtn.UseVisualStyleBackColor = true;
+            this.cancelTourBtn.Click += new System.EventHandler(this.cancelTourBtn_Click);
+            // 
+            // signTourBtn
+            // 
+            this.signTourBtn.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signTourBtn.Location = new System.Drawing.Point(393, 310);
+            this.signTourBtn.Name = "signTourBtn";
+            this.signTourBtn.Size = new System.Drawing.Size(326, 30);
+            this.signTourBtn.TabIndex = 45;
+            this.signTourBtn.Text = "Sign Up For Tour";
+            this.signTourBtn.UseVisualStyleBackColor = true;
+            this.signTourBtn.Click += new System.EventHandler(this.signTourBtn_Click);
+            // 
+            // toursSignedListBox
+            // 
+            this.toursSignedListBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toursSignedListBox.FormattingEnabled = true;
+            this.toursSignedListBox.ItemHeight = 14;
+            this.toursSignedListBox.Location = new System.Drawing.Point(293, 429);
+            this.toursSignedListBox.Name = "toursSignedListBox";
+            this.toursSignedListBox.Size = new System.Drawing.Size(511, 144);
+            this.toursSignedListBox.TabIndex = 44;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(463, 388);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(175, 26);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Tours Signed up for";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(463, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 26);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Available Tours";
+            // 
+            // availToursListBox
+            // 
+            this.availToursListBox.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.availToursListBox.FormattingEnabled = true;
+            this.availToursListBox.ItemHeight = 14;
+            this.availToursListBox.Location = new System.Drawing.Point(293, 143);
+            this.availToursListBox.Name = "availToursListBox";
+            this.availToursListBox.Size = new System.Drawing.Size(511, 144);
+            this.availToursListBox.TabIndex = 41;
             // 
             // MasterFormEmployee
             // 
@@ -594,11 +427,9 @@
             this.Text = "Employee Console";
             this.tabLogin.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -611,24 +442,6 @@
         private System.Windows.Forms.TabControl tabLogin;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label lblFeedbackTitle;
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.ColumnHeader columnHeader19;
@@ -639,11 +452,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader24;
         private System.Windows.Forms.ColumnHeader columnHeader25;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ListView listView4;
-        private System.Windows.Forms.ColumnHeader columnHeader26;
-        private System.Windows.Forms.ColumnHeader columnHeader27;
-        private System.Windows.Forms.ColumnHeader columnHeader28;
-        private System.Windows.Forms.ColumnHeader columnHeader29;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -659,5 +467,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cancelTourBtn;
+        private System.Windows.Forms.Button signTourBtn;
+        private System.Windows.Forms.ListBox toursSignedListBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox availToursListBox;
     }
 }

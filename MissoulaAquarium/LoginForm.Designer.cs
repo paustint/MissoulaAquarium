@@ -118,6 +118,7 @@
             // 
             // lblStatus
             // 
+            this.lblStatus.ForeColor = System.Drawing.Color.Red;
             this.lblStatus.Location = new System.Drawing.Point(344, 465);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(546, 39);
@@ -161,6 +162,7 @@
             this.custPasswordTxtBox.Name = "custPasswordTxtBox";
             this.custPasswordTxtBox.Size = new System.Drawing.Size(221, 21);
             this.custPasswordTxtBox.TabIndex = 15;
+            this.custPasswordTxtBox.Text = "b1234";
             this.custPasswordTxtBox.UseSystemPasswordChar = true;
             // 
             // custNameTxtBox
@@ -170,6 +172,7 @@
             this.custNameTxtBox.Name = "custNameTxtBox";
             this.custNameTxtBox.Size = new System.Drawing.Size(221, 21);
             this.custNameTxtBox.TabIndex = 14;
+            this.custNameTxtBox.Text = "Bruno Mars";
             // 
             // loginCust
             // 
@@ -214,7 +217,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aquarium Employee Login";
+            this.Text = "Missoula Aquarium Login";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

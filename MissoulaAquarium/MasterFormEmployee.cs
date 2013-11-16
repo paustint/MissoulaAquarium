@@ -17,6 +17,8 @@ namespace MissoulaAquarium
         private List<Event> eventsAvail = new List<Event>();
         private List<Event> eventsSigned = new List<Event>();
         private List<Employee> employees = new List<Employee>();
+        private List<Tour> tourAvail = new List<Tour>();
+        private List<Tour> tourSigned = new List<Tour>();
 
         public MasterFormEmployee(string currUser)
         {
@@ -66,6 +68,34 @@ namespace MissoulaAquarium
             currentEmpSch = new Shift(current4, "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off", "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm");
             item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
             scheduleListBox.Items.Add(item);
+
+            ///add tours
+            ///
+            tourAvail.Add(new Tour("Seal Safari", 1, "Bill Johnson", "12/20/2013 8:00 am", "Missoula Aquarium"));
+            tourAvail.Add(new Tour("Morning Glory", 2, "Ace Boomer", "12/21/2013 8:00 am", "Missoula Aquarium"));
+            tourAvail.Add(new Tour("Night Owl", 3, "Linda Weston", "12/22/2013 10:00 pm", "Caras Park"));
+            tourAvail.Add(new Tour("Shark Scamper", 4, "Sara Jones", "12/23/2013 11:00 am", "Missoula Aquarium"));
+            addToAvailToursListBox();
+
+        }
+
+        private void addToAvailToursListBox()
+        {
+            availToursListBox.DataSource=tourAvail;
+            availToursListBox.SelectedIndex = 0;
+        }
+
+        private void addToSignedToursListBox()
+        {
+            //add tour to signed up listbox
+            List<Tour> temp = new List<Tour>();
+            //must use new array for some reason or it will not work
+            foreach (Tour e in tourSigned)
+            {
+                temp.Add(e);
+            }
+            toursSignedListBox.DataSource = temp;
+
         }
 
         private void addToListBoxAvailEvents()
@@ -142,6 +172,44 @@ namespace MissoulaAquarium
             {
                 //if there is no event to cancel
                 MessageBox.Show("There are no events to cancel!");
+            }
+        }
+
+        private void signTourBtn_Click(object sender, EventArgs e)
+        {
+            //add selected item to signed up box
+            int index = availToursListBox.SelectedIndex;
+            Tour temp = tourAvail.ElementAt(index);
+            Boolean isSigned = false;
+            //make sure user is not already signed up for event
+            foreach (Tour ev in tourSigned)
+            {
+                if (ev.getID() == temp.getID())
+                {
+                    isSigned = true;
+                    MessageBox.Show("You are already signed up for this tour.");
+                }
+            }
+            if (!isSigned)
+            {
+                tourSigned.Add(temp);
+                addToSignedToursListBox();
+            }
+        }
+
+        private void cancelTourBtn_Click(object sender, EventArgs e)
+        {
+            //cancel selected item in signed up box
+            if ((tourSigned.Count) != 0)
+            {
+                int index = toursSignedListBox.SelectedIndex;
+                tourSigned.RemoveAt(index);
+                addToSignedToursListBox();
+            }
+            else
+            {
+                //if there is no event to cancel
+                MessageBox.Show("There are no tours to cancel!");
             }
         }
     }

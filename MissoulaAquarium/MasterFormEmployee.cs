@@ -17,7 +17,7 @@ namespace MissoulaAquarium
         private List<Event> eventsAvail = new List<Event>();
         private List<Event> eventsSigned = new List<Event>();
         private List<Employee> employees = new List<Employee>();
-        
+
         public MasterFormEmployee(string currUser)
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace MissoulaAquarium
             employees.Add(current3);
             Employee current4 = new Employee("Todd Regal", userNum + 3, "Gift Shop Clerk");
             employees.Add(current4);
- 
+
             //print to console for reference and debug
             foreach (Employee e in employees)
             {
@@ -62,12 +62,9 @@ namespace MissoulaAquarium
             item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
             scheduleListBox.Items.Add(item);
 
-            currentEmpSch = new Shift(current4,   "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off", "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm" );
+            currentEmpSch = new Shift(current4, "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off", "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm");
             item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
             scheduleListBox.Items.Add(item);
-
-            //    scheduleListBox.DataSource=employeeShift;
-
         }
 
         private void addToListBoxAvailEvents()

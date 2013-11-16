@@ -35,7 +35,7 @@ namespace MissoulaAquarium
             int userNum = int.Parse(currUser);
             int diff = 0;// userNum - 79002;
             Employee current = new Employee("John Lee", userNum, "Associate");
-            employees.Add(current);
+            employees.Add(current);            
             Employee current2 = new Employee("Mary Jane", userNum - diff + 1, "Associate");
             employees.Add(current2);
             Employee current3 = new Employee("Fred Savage", userNum - diff + 2, "Manager");

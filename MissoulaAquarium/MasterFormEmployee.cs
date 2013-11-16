@@ -50,10 +50,23 @@ namespace MissoulaAquarium
             }
 
             Shift currentEmpSch = new Shift(current, "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off");
+
             employeeShift.Add(currentEmpSch);
             ListViewItem item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
-            //  ListViewItem item = new ListViewItem(currentEmpSch);
             scheduleListBox.Items.Add(item);
+
+            currentEmpSch = new Shift(current2, "9:00 am-5:00 pm", "Off", "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm");
+            item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
+            scheduleListBox.Items.Add(item);
+
+            currentEmpSch = new Shift(current3,   "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off", "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm" );
+            item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
+            scheduleListBox.Items.Add(item);
+
+            currentEmpSch = new Shift(current4,   "9:00 am-5:00 pm", "9:00 am-5:00 pm", "9:00 am-5:00 pm", "Off", "Off", "9:00 am-5:00 pm", "9:00 am-5:00 pm" );
+            item = new ListViewItem(new[] { "" + currentEmpSch.emp.empID, currentEmpSch.emp.empName, currentEmpSch.mon, currentEmpSch.tue, currentEmpSch.wed, currentEmpSch.thu, currentEmpSch.fri, currentEmpSch.sat, currentEmpSch.sun });
+            scheduleListBox.Items.Add(item);
+
             //    scheduleListBox.DataSource=employeeShift;
 
         }
